@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>1.0.0-beta</Version>
+    <Authors>Frandi Dwi</Authors>
+    <Description>A .NET CLI wrapper to programmatically run `dotnet` commands from your application.</Description>
+    <Copyright />
+    <RepositoryUrl>https://github.com/frandi/Dotnetify</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>dotnet, tools</PackageTags>
+  </PropertyGroup>
+
+</Project>
