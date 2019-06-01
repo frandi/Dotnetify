@@ -11,13 +11,23 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  csprojLocation: 'src/Dotnetify/Dotnetify.csproj'
+  projectLocation: 'src/Dotnetify/Dotnetify.csproj'
+  testProjectLocation: 'test/Dotnetify.Test/Dotnetify.Test.csproj'
 
 steps:
 - task: DotNetCoreInstaller@0
   displayName: 'Install Dotnet SDK'
   inputs:
     version: '2.2.204'
-    
-- script: dotnet build $(csprojLocation) --configuration $(buildConfiguration)
-  displayName: 'Build Dotnetify'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(projectLocation)'
+    arguments: '--configuration $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '$(testProjectLocation)'
+    testRunTitle: 'Test Dotnetify'
