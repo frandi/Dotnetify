@@ -10,8 +10,14 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  buildConfiguration: 'Release'
+  buildConfiguration: 'Release',
+  csprojLocation: 'src/Dotnetify/Dotnetify.csproj'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- task: DotNetCoreInstaller@0
+  displayName: 'Install Dotnet SDK'
+  inputs:
+    version: '2.2.204'
+    
+- script: dotnet build $(csprojLocation) --configuration $(buildConfiguration)
+  displayName: 'Build Dotnetify'
