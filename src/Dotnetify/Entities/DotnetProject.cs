@@ -1,4 +1,4 @@
-﻿namespace Dotnetify
+﻿namespace Dotnetify.Entities
 {
     /// <summary>
     /// Object of the .NET project

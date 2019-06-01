@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dotnetify.Entities;
+using Dotnetify.Enums;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

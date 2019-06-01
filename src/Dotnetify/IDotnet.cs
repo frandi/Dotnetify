@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Dotnetify.Entities;
+using Dotnetify.Enums;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Dotnetify
