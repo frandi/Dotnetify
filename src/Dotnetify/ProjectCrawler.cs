@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dotnetify.Entities;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using System.Xml;

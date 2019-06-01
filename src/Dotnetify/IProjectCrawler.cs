@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using Dotnetify.Entities;
+using System.Threading.Tasks;
 
 namespace Dotnetify
 {

@@ -1,4 +1,4 @@
-﻿namespace Dotnetify
+﻿namespace Dotnetify.Enums
 {
     /// <summary>
     /// Templates of .NET project component
